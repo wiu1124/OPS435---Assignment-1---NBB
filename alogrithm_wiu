@@ -8,6 +8,13 @@ Date: October 12th, 2020
 Description:
 -------------------------------------------
 A script/program created with Python3 to process date of birth data formatted such as "YYYY-MM-DD" and convert to standard format like "November 24, 2020".
+Essentially the code will run in a specific order defined by the bottom code in which is provided by the professor, Raymond Chan.
+If the user inputs data in the incorrect format then a message will appear showing the user how to input the data.
+As the user inputs data towards the program, the first thing it'll do is "sanitize" the information by removing the special characters to keep the input clean.
+The data will then be in the process of "size check" to see that what the user inputted in terms of the length is 8 characters long after the removal of the special characters (if used.)
+Afterwards the data will go towards a "range check" to see that the year, month and day is correct. i.e if user inputted 1780 in which is out of the range of 1900 - 9999 then an error message is received, if user inputs month as 13 (out of 1-12) then an error message is received.
+Once finished, the data will proceed however the year data will be moved on towards a "leap year" check to see if the year inputted is a leap year.
+After finalizing, the data will be converted to the standard format through a new declaration and will print the output towards the user.
 -------------------------------------------
 Notes:
 -------------------------------------------
