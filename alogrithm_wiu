@@ -26,7 +26,8 @@ Algorithm (Of code inside):
 (3) Define a function with code to ensure that the special characters inside the different date formats such as YYYY-MM-DD are removed to allow analysis of the given year, month and day from the data.
 	
 	define sanitize(obj1, obj2):
-		- call the already defined user_raw_data with a .replace string method to remove the special characters if given in the specific format.
+		- have obj1 bound towards user_raw_data with a string method used to help replace the special characters
+		- 
 		- <still thinking/processing>
 
 (4) Define a function with code to ensure that the length of the date format after extraction is correct.
