@@ -19,14 +19,14 @@ Algorithm (Of code inside):
 		
 (2) Define a function with code to determine that the year in the date of the format is a leap year from data.
 	
-	define leap_year(obj):
+	define leap_year(year):
 		- Include if statements to see if the years are dividable in the given increments (4, 100, 400)
-		- If obj is not dividable then it's not leap year, otherwise it is.
+		- If year is not dividable then it's not leap year, otherwise it is.
 		- Return values to status.
 	
 (3) Define a function with code to ensure that the special characters inside the different date formats such as YYYY-MM-DD are removed to allow analysis of the given year, month and day from the data.
 	
-	define sanitize(obj1, obj2):
+	define sanitize(user_raw_data, allow_chars):
 		- 
 
 (4) Define a function with code to ensure that the length of the date format after extraction is correct.
@@ -42,6 +42,6 @@ Algorithm (Of code inside):
 (6) Define a function with code to allow the usage of the data to be read and extracted with the script.
 
 	def usage(): 
-		-
+		- include a print statement that'll say/show how to use the program
 
 (7) As provided with the given code at the end of the script will call the created functions as well as the data to process, convert and output the results.
