@@ -10,35 +10,43 @@ Description:
 A script/program created with Python3 to process date of birth data formatted such as "YYYY-MM-DD" and convert to standard format like "November 24, 2020".
 -------------------------------------------
 Algorithm (Of code inside):
+<"obj" names will most likely be changed at somepoint. Currently using as a place holder.>
+<Things are subjected to change with the thought process>
 -------------------------------------------
 (1) Define the built-in system functions to allow functionality of the script through import.
 
-	import os
-	import sys
+	import built-in system functions such as sys and os.
 		
 (2) Define a function with code to determine that the year in the date of the format is a leap year from data.
 	
 	define leap_year(obj):
 		- Include if statements to see if the years are dividable in the given increments (4, 100, 400)
 		- If year is not dividable then it's not leap year, otherwise it is.
-		- Return values to year
+		- Return values to obj
 	
 (3) Define a function with code to ensure that the special characters inside the different date formats such as YYYY-MM-DD are removed to allow analysis of the given year, month and day from the data.
 	
 	define sanitize(obj1, obj2):
 		- have obj1 bound towards user_raw_data with a string method used to help replace the special characters
-		- 
-		- <still thinking/processing>
+		- obj2 will be bound towards allow_chars 
+		- return values to obj1
+		<still thinking/processing> <- Likely to change structure
 
 (4) Define a function with code to ensure that the length of the date format after extraction is correct.
 
 	def size_check(obj, intobj):
-		- <still thinking/processing>
+		- Declare obj variable towards dob 
+		- Declare intobj as 8 as that's the total amount of characters after special characters are removed/sanitized.
+		- if else statement used to define if the length of the characters after being sanitized are proper. If there's more than 8 characters or not equal in the length then false, else return true if there's 8 characters
+		<still thinking/processing> <- Likely to change structure
 
 (5) Define a function with code that'll create a minimum and maximum range for years that are allowed (i.e 1900 or later...) as well as the range of months to ensure realistic information from the given data.
 
 	def range_check(obj1, obj2):
-		- <still thinking/processing>
+		- obj1 will be assigned towards the variables year, month, day(?)
+		- multiple if else statements to decide if the they are in range. i.e if year is not in the range of 1900-9999 then false else return true and etc.
+		- returns values to obj1 
+		<still thinking/processing> <- Likely to change structure
 
 (6) Define a function with code to allow the usage of the data to be read and extracted with the script.
 
@@ -46,4 +54,4 @@ Algorithm (Of code inside):
 		- Use a print statement to show how to use the program if the user fails to input correctly.
 		- Returned towards len(sys.argv)
 
-(7) As provided with the given code at the end of the script will call the created functions as well as the data to process, convert and output the results.
+(7) As provided with the given code by professor at the end of the script will call the created functions as well as the data to process, convert and output the results.
