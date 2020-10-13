@@ -1,0 +1,47 @@
+-------------------------------------------
+OPS435 Assignment 1 - Fall 2020 - Algorithm
+-------------------------------------------
+Name: Wesley Iu
+Code & Section: OPS435-NBB
+Date: October 12th, 2020
+-------------------------------------------
+Description:
+-------------------------------------------
+A script/program created with Python3 to process date of birth data formatted such as "YYYY-MM-DD" and convert to standard format like "November 24, 2020".
+-------------------------------------------
+Algorithm (Of code inside):
+-------------------------------------------
+(1) Define the built-in system functions to allow functionality of the script through import.
+
+	import os
+	import sys
+	import subprocess
+		
+(2) Define a function with code to determine that the year in the date of the format is a leap year from data.
+	
+	define leap_year(obj):
+		- Include if statements to see if the years are dividable in the given increments (4, 100, 400)
+		- If obj is not dividable then it's not leap year, otherwise it is.
+		- Return values to status.
+	
+(3) Define a function with code to ensure that the special characters inside the different date formats such as YYYY-MM-DD are removed to allow analysis of the given year, month and day from the data.
+	
+	define sanitize(obj1, obj2):
+		- 
+
+(4) Define a function with code to ensure that the length of the date format after extraction is correct.
+
+	def size_check(obj, intobj):
+		- Statement to check the 
+
+(5) Define a function with code that'll create a minimum and maximum range for years that are allowed (i.e 1900 or later...) as well as the range of months to ensure realistic information from the given data.
+
+	def range_check(obj1, obj2):
+		-
+
+(6) Define a function with code to allow the usage of the data to be read and extracted with the script.
+
+	def usage(): 
+		-
+
+(7) As provided with the given code at the end of the script will call the created functions as well as the data to process, convert and output the results.
