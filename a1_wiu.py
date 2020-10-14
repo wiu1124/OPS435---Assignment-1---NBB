@@ -21,40 +21,43 @@ import os
 import sys
 
 def usage():
+    #used to show the usage of program if user fails
     print('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
     return
 
-def sanitize(obj1, obj2):
-    obj1 = user_raw_data.replace('/', '').replace('.', '').replace('-','')
-    obj2 = allow_chars.replace(user_raw_data, '')
-    return obj1
+def sanitize(x, y):
+    #Allows specific characters and removes specified characters
+    for y in ['/', '.', '-']:
+        if y in x:
+            x = x.replace(y, '')
+    return x
 
-def size_check(obj, intobj):
-    obj = dob
-    intobj = 8
-    if len(obj) != 8:
-     return False
-    
-def range_check(obj1, obj2):
-    obj1 = year
-    obj2 = range(1900,10000)
-    if int(obj1) in obj2:
-     return True
-    else:
-     return False
-    return obj1
-
-def leap_year(obj3):
-    if (int(obj3) % 4) == 0:
-     if (int(obj3) % 100) == 0:
-       if (int(obj3) % 400) ==0:
-        return True
-       else:
+def size_check(x, y):
+    #checks if length of the "sanitized' information is 8 characters long
+    if len(x) != y:
         return False
-     else:
-      return True
     else:
-     return False
+        return True
+    
+def range_check(x, inty):
+    #checks if integer is within the range that's given
+      if x >= inty[0] and x <= inty[1]:
+        return True
+      else:
+        return False
+
+def leap_year(x):
+    #checks if integer is a leap year by dividing through the increments
+      if (int(x) % 4) == 0:
+       if (int(x) % 100) == 0:
+        if (int(x) % 400) ==0:
+         return True
+        else:
+         return False
+       else:
+        return True
+      else:
+       return False
 
 if __name__ == "__main__":
    # step 1
@@ -86,7 +89,7 @@ if __name__ == "__main__":
        sys.exit()
    result = range_check(month,(1,12))
    if result == False:
-       print("Error 02: Wrong month entered")
+       print("Error 02: wrong month entered")
        sys.exit()
       result = leap_year(year)
    if result == True:
