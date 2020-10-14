@@ -21,7 +21,7 @@ import os
 import sys
 
 def usage():
-    print('Usage: a1_rchan.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
+    print('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
     return
 
 def sanitize(obj1, obj2):
