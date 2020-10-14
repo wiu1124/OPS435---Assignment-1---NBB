@@ -91,7 +91,7 @@ if __name__ == "__main__":
    if result == False:
        print("Error 02: wrong month entered")
        sys.exit()
-      result = leap_year(year)
+   result = leap_year(year)
    if result == True:
        days_in_month[2] = 29
    result = range_check(day, (1, days_in_month[month]))
