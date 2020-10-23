@@ -1,5 +1,5 @@
 -------------------------------------------
-OPS435 Assignment 1 - Fall 2020 - Algorithm
+OPS435 Assignment 1 - Fall 2020 - Algorithm (Final Version)
 -------------------------------------------
 Name: Wesley Iu
 Code & Section: OPS435-NBB
@@ -20,45 +20,40 @@ Notes:
 -------------------------------------------
 <"obj" names will most likely be changed at somepoint. Currently using as a place holder.>
 <Things are subjected to change with the thought process>
-<Had a bit of struggle figuring out>
 -------------------------------------------
 Algorithm (Of code inside):
 -------------------------------------------
 (1) Define the built-in system functions to allow functionality of the script through import.
 
-	import built-in system functions such as sys and os.
+	import built-in system function, "sys".
 		
 (2) Define a function with code to determine that the year in the date of the format is a leap year from data.
 	
-	define leap_year(obj):
+	define leap_year(x):
 		- Include if statements to see if the years are dividable in the given increments (4, 100, 400)
 		- If year is not dividable then it's not leap year, otherwise it is.
 		- Return values to obj
 	
 (3) Define a function with code to ensure that the special characters inside the different date formats such as YYYY-MM-DD are removed to allow analysis of the given year, month and day from the data.
 	
-	define sanitize(obj1, obj2):
-		- Have obj1 bound towards user_raw_data with a string method used to help replace the special characters
-		- obj2 will be bound towards allow_chars
-		- Return values to obj1
-		<still thinking/processing> <- Likely to change structure
+	define sanitize(x, y):
+		- for loop where "y" calls "allow_chars" in the list
+	        - Inside the loop, if "y" is in "x" (user_raw_dat) will replace/remove characters from the list
+                - Returns results from x
 
 (4) Define a function with code to ensure that the length of the date format after extraction is correct.
 
-	def size_check(obj, intobj):
-		- Declare obj variable towards dob 
-		- Declare intobj as 8 as that's the total amount of characters after special characters are removed/sanitized.
-		- If else statement used to define if the length of the characters after being sanitized are proper. If there's more than 8 characters or not equal in the length then false, else return true if there's 8 characters
-		- Return values to obj
-		<still thinking/processing> <- Likely to change structure
+	def size_check(x, y):
+		- if-else statement to check the length of x from the given integer for y.
+		- If not then returns as false.
+		- If true then returns as true.
 
 (5) Define a function with code that'll create a minimum and maximum range for years that are allowed (i.e 1900 or later...) as well as the range of months to ensure realistic information from the given data.
 
-	def range_check(obj1, obj2):
-		- obj1 will be assigned towards the called variables year, month, day(?)
-		- Multiple if else statements to decide if the they are in range. i.e if year is not in the range of 1900-9999 then false else return true and etc.
-		- Returns values to obj1 
-		<still thinking/processing> <- Likely to change structure
+	def range_check(x, inty):
+		- if-else with a range to see if x is greater or equal to the first number and less or equal to the second number.
+		- If in the range then return as true.
+		- If not in the range then return as false.
 
 (6) Define a function with code to allow the usage of the data to be read and extracted with the script.
 
