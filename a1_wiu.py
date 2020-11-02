@@ -22,8 +22,8 @@ import sys
 
 def usage():
     #used to show the usage of program if user fails
-    x = print('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
-    return x
+    print('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
+    return
 
 def sanitize(x, y):
     #Allows specific characters and removes specified characters
