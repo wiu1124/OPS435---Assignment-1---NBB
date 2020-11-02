@@ -22,8 +22,7 @@ import sys
 
 def usage():
     #used to show the usage of program if user fails
-    x = print('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
-    return x
+    return('Usage: a1_wiu.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
 
 def sanitize(x, y):
     #Allows specific characters and removes specified characters
@@ -62,7 +61,7 @@ def leap_year(x):
 if __name__ == "__main__":
    # step 1
    if len(sys.argv) != 2:
-      usage()
+      print(usage())
       sys.exit()
    # step 2
    month_name = ['Jan','Feb','Mar','Apr','May','Jun',
@@ -102,5 +101,3 @@ if __name__ == "__main__":
    new_dob = str(month_name[month - 1])+' '+ str(day)+', '+str(year)
    # step 8
    print(new_dob)
-
-        
