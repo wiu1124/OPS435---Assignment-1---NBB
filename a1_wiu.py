@@ -15,6 +15,16 @@ I understand that the Academic Honesty Policy will be enforced and
 violators will be reported and appropriate action will be taken.
 
 Description: This program will convert date formats in YYYY-MM-DD, YYYY/MM/DD or YYYY.MM.DD to regular the regular date format (i.e October 24th, 2020).
+
+Function usage() description: This function will be called as usage in which it will return a statement describing how to use the program if the user fails to use correctly.
+
+Function sanitize(x, y) description: This function will "sanitize"/remove any characters from the specific list in between the given format of the date.
+
+Function size_check(x, y) description: This function will check the length of the date is at least 8 characters long after being sanitized from the sanitized function.
+
+Function range_check(x, inty) description: This function will check if the sanitizied date is within the given range by year, day and month.
+
+Function leap_year(x) description: This function will check if the year is a leap year.
 '''
 
 import os
