@@ -27,7 +27,7 @@ def usage():
 
 def sanitize(x, y):
     #Allows specific characters and removes specified characters
-    for y in ['/', '.', '-']:
+    for y in ['/', '.', '-', 'X']:
         if y in x:
             x = x.replace(y, '')
     return x
